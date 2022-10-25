@@ -60,7 +60,7 @@ function mathOperation() {
   } else if (lastOperation === "%") {
     result = parseFloat(result) % parseFloat(dis2Num);
   } else if (lastOperation === "+/-"){
-      result = -1 * parseFloat(dis1Num);
+      result = parseFloat(result) * -(parseFloat(dis2Num));
   }
 }
 // operation();
