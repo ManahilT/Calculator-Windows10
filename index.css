@@ -17,6 +17,13 @@ section {
   align-items: flex-start;
   justify-content: flex-start;
 }
+.history{
+  text-align: right;
+  font-weight: bolder;
+  font-size: 22px;
+  text-decoration: underline blue;
+  margin: 10px 40px;
+}
 .container {
   width: 100%;
   height:100vh;
