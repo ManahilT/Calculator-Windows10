@@ -5,7 +5,10 @@ box-sizing: border-box;
 
 }
 html {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Lora', serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 section {
   background-color: transparent;
