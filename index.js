@@ -6,7 +6,6 @@ const operationEl = document.querySelectorAll(".operation");
 const equalEl = document.querySelector(".btn-equal");
 const clearAllEl = document.querySelector(".all-clear");
 const clearLastEl = document.querySelector(".last-entity-clear");
-let history = document.getElementById('history')
 let dis1Num = "";
 let dis2Num = "";
 let result = null;
@@ -61,7 +60,7 @@ function mathOperation() {
   } else if (lastOperation === "%") {
     result = parseFloat(result) % parseFloat(dis2Num);
   } else if (lastOperation === "+/-"){
-      result = -1(parseFloat(result));
+      result = parseFloat(result) * -1 ;
   }
 }
 
