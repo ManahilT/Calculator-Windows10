@@ -21,7 +21,7 @@ numbersEl.forEach((number) => {
     }
     dis2Num += e.target.innerText;
     display2El.innerText = dis2Num;
-    // console.log();
+    
   });
 });
 
@@ -60,10 +60,10 @@ function mathOperation() {
   } else if (lastOperation === "%") {
     result = parseFloat(result) % parseFloat(dis2Num);
   } else if (lastOperation === "+/-"){
-      result = parseFloat(result) * -(parseFloat(dis2Num));
+      result = parseFloat(result) * -1;
   }
 }
-// operation();
+
 
 equalEl.addEventListener("click", () => {
   if (!dis2Num || !dis1Num) return;
@@ -114,7 +114,6 @@ window.addEventListener("keydown", (e) => {
   } else if (e.key == "Enter" || e.key === "=") {
     clickEqual();
   }
-  // console.log(e.key)
 });
 function clickButtonEl(key) {
   numbersEl.forEach((button) => {
