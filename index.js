@@ -12,6 +12,7 @@ let result = null;
 let lastOperation = "";
 let haveDot = false;
 
+
 numbersEl.forEach((number) => {
   number.addEventListener("click", (e) => {
     if (e.target.innerText === "." && !haveDot) {
@@ -35,6 +36,7 @@ operationEl.forEach((operation) => {
     } else {
       result = parseFloat(dis2Num);
     }
+
     clearVar(operationName);
     lastOperation = operationName;
     console.log(result);
@@ -49,20 +51,22 @@ function clearVar(name = "") {
 }
 
 function mathOperation() {
-  if (lastOperation === "x") {
+  if (lastOperation === "÷") {
+    result = parseFloat(result) / parseFloat(dis2Num);
+  } else if (lastOperation === "x") {
     result = parseFloat(result) * parseFloat(dis2Num);
   } else if (lastOperation === "+") {
-    result = parseFloat(result) + parseFloat(dis2Num);
+    result = parseFloat(result) +  parseFloat(dis2Num);
   } else if (lastOperation === "-") {
     result = parseFloat(result) - parseFloat(dis2Num);
-  } else if (lastOperation === "÷") {
-    result = parseFloat(result) / parseFloat(dis2Num);
   } else if (lastOperation === "%") {
     result = parseFloat(result) % parseFloat(dis2Num);
   } else if (lastOperation === "+/-"){
       result = parseFloat(result) * -1 ;
   }
+  
 }
+
 
 
 equalEl.addEventListener("click", () => {
@@ -74,7 +78,6 @@ equalEl.addEventListener("click", () => {
   tempResultEl.innerText = "";
   dis2Num = result;
   dis1Num = "";
-  history.appendChild(result);
 });
 
 clearAllEl.addEventListener("click", () => {
@@ -107,7 +110,7 @@ window.addEventListener("keydown", (e) => {
   ) {
     clickButtonEl(e.key);
     // console.log(e.key)
-  } else if (e.key === "+" || e.key === "-" || e.key === "÷" || e.key === "%" || e.key === "+/-") {
+  } else if (e.key === "÷" || e.key === "+" || e.key === "-" || e.key === "%" || e.key === "+/-") {
     clickOperation(e.key);
   } else if (e.key === "*") {
     clickOperation("x");

@@ -67,7 +67,15 @@ section {
 .button:hover {
   background-color: #d9d9d9;
 }
-
+.operation{
+  background: #a3a3a3;
+}
+.all-clear{
+  background: #a3a3a3;
+}
+.last-entity-clear{
+  background: #a3a3a3;
+}
 .btn-equal{
     background: #73a5c0
 }
