@@ -12,7 +12,6 @@ let result = null;
 let lastOperation = "";
 let haveDot = false;
 
-
 numbersEl.forEach((number) => {
   number.addEventListener("click", (e) => {
     if (e.target.innerText === "." && !haveDot) {
@@ -62,9 +61,9 @@ function mathOperation() {
   } else if (lastOperation === "%") {
     result = parseFloat(result) % parseFloat(dis2Num);
   } else if (lastOperation === "+/-"){
-      result = parseFloat(result) * -1 ;
+    result = parseFloat(dis1Num) * -1 ;
   }
-  
+  history.push(data)
 }
 
 
