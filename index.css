@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-box-sizing: border-box;
+ box-sizing: border-box;
 
 }
 html {
@@ -68,7 +68,9 @@ section {
   background-color: #d9d9d9;
 }
 
-
+.btn-0 {
+  grid-column: 1/3;
+}
 .btn-equal{
     background: #73a5c0
 }
