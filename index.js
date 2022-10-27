@@ -61,10 +61,7 @@ function mathOperation() {
   } else if (lastOperation === "%") {
     result = parseFloat(result) % parseFloat(dis2Num);
   }
-
-  history.push(data)
 }
-
 
 
 equalEl.addEventListener("click", () => {
