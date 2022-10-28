@@ -3,15 +3,15 @@ let input2El = document.querySelector(".input-2");
 let numbersEl = document.querySelectorAll(".number");
 let operationEl = document.querySelectorAll(".operation"); 
 
-function setDisplay1(input1El){
-let resultEl = null;
-resultEl= input1El.innertext;
-let result= resultEl.toLocalString();
+function setDisplay2(val){
+
+input2El.innertext = val;
+alert("hello world")
 
 
 }
 
-function setDisplay2(input1El, input2El, operationEl, is_equal_state){
+function setDisplay1(input1El, input2El, operationEl, is_equal_state){
 let var1 = "";
 let var2 = "";
 let operand = "";
@@ -47,3 +47,4 @@ function numberPressed(){
 function clickEqual() {
   equalEl.click();
 }
+setDisplay2(3)
